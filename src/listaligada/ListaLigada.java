@@ -68,6 +68,16 @@ package listaligada;
             posicion++;
         }
     }
-
-}  
+    public T borrarInicio(){
+         T elemento = (T) head.getDato();
+         if(head==tail){
+         head = null; 
+         tail = null;
+      }
+         else{
+          head = head.getSiguiente();
+      }
+      return  elemento;
+   }
+    }  
 

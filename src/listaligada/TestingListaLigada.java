@@ -13,7 +13,6 @@ public class TestingListaLigada {
     public static void main(String[] args) throws IOException {
         BufferedReader bufer = new BufferedReader(new InputStreamReader(System.in));
         String entrada;
-
         int dato;
         char respuesta;
 
@@ -75,7 +74,7 @@ public class TestingListaLigada {
             System.out.println("Escriba el String para agregar a la lista: ");
             entrada = bufer.readLine();
             lista2.add(entrada);
-            System.out.println("¿Quieres insertar mas datos?");
+            System.out.println("¿Quieres insertar mas datos: (s/n)?");
             entrada = bufer.readLine();
             respuesta = entrada.charAt(0);
             if(respuesta == 'n' || respuesta == 'N')
